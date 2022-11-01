@@ -1,0 +1,26 @@
+.hero_banner{
+    height: 70vh;
+    background-color:#FF930D;
+    border-radius: 5px;
+}
+
+
+.banner_tractor_img img{
+    border-radius: 5px;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.Home_inspection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Home_inspection li b{
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+    color:#fff;
+    font-family: 'Times New Roman', Times, serif;
+}

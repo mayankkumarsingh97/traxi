@@ -1,0 +1,81 @@
+.social_icons {
+    height: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.social_icons a {
+    color: #fff;
+}
+
+.social_icons a:hover {
+    color: yellow;
+}
+
+.search_se input {
+    width: 90%;
+    box-shadow: inset 0 0 2px 3px rgb(185, 185, 185);
+    outline: none;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    font-size: .8rem;
+    padding: 6px 10px 6px 15px;
+    background-color: #eee;
+
+}
+
+
+.register_login {
+    font-size: 14px;
+}
+
+.logo_header h3 {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.register_login select,
+nav ul li select {
+    outline: none;
+    border: none;
+    font-size: .7rem;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.register_login .reg_login a {
+    font-size: .7rem;
+    color: #000;
+}
+
+
+/* navigation bar */
+/* navigation bar */
+
+nav ul li select {
+    
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li select{
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .8)
+}
+nav ul li a {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .8);
+    font-weight: 700;
+}

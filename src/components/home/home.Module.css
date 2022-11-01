@@ -1,0 +1,30 @@
+
+.main_container{
+    margin-top: 10px;
+}
+.main_container .search_img{
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    padding:10px;
+    /* border-radius: 5px; */
+    box-shadow:inset 0 0 5px 2px #FF930D;
+}
+.main_container .search_img img{
+    width: 100%;
+}
+
+.main_container .name{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 14px;
+}
+.main_container button{
+    transform: .3s linear;
+    border: 2px solid #FF930D;
+    width: 100%;
+}
+.main_container button:hover{
+    background-color: lightblue;
+}
