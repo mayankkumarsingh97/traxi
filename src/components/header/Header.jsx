@@ -69,7 +69,7 @@ export default function Header() {
                         <nav>
                             <ul>
                                 <li>
-                                    <a href=""><option value="Home">Home</option></a>
+                                <a href="#home"><option value="Home">Home</option></a>
                                 </li>
                                 <li><select name="" id="">
                                     <option value="Farm_services">Farm Services</option>

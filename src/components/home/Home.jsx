@@ -13,7 +13,7 @@ export default function Home() {
           <Col md={12}>
             <h3 className='text-center'>The most searched  tractors.</h3>
           </Col>
-          <Col md={3}>
+          <Col md={3} xs={6}>
             <div className="main_container">
               <div className="search_img">
                 <img src={tractor_img_one} alt="alt for img" />
@@ -21,16 +21,16 @@ export default function Home() {
               <div className="name">
                 <div>Renault KWID</div>
                 <div>Rs 10 lakh</div>
-                </div>
-                <div className="offer_btn">
-                  <button>check for offers</button>
-                </div>
-             
+              </div>
+              <div className="offer_btn">
+                <button>check for offers</button>
+              </div>
+
             </div>
           </Col>
 
-         {/* Duplicates starts from here.. */}
-          <Col md={3}>
+          {/* Duplicates starts from here.. */}
+          <Col md={3} xs={6}>
             <div className="main_container">
               <div className="search_img">
                 <img src={tractor_img_one} alt="alt for img" />
@@ -38,15 +38,15 @@ export default function Home() {
               <div className="name">
                 <div>Renault KWID</div>
                 <div>Rs 10 lakh</div>
-                </div>
-                <div className="offer_btn">
-                  <button>check for offers</button>
-                </div>
-             
+              </div>
+              <div className="offer_btn">
+                <button>check for offers</button>
+              </div>
+
             </div>
           </Col>
 
-          <Col md={3}>
+          <Col md={3} xs={6}>
             <div className="main_container">
               <div className="search_img">
                 <img src={tractor_img_one} alt="alt for img" />
@@ -54,16 +54,16 @@ export default function Home() {
               <div className="name">
                 <div>Renault KWID</div>
                 <div>Rs 10 lakh</div>
-                </div>
-                <div className="offer_btn">
-                  <button>check for offers</button>
-                </div>
-             
+              </div>
+              <div className="offer_btn">
+                <button>check for offers</button>
+              </div>
+
             </div>
           </Col>
 
 
-          <Col md={3}>
+          <Col md={3} xs={6}>
             <div className="main_container">
               <div className="search_img">
                 <img src={tractor_img_one} alt="alt for img" />
@@ -71,15 +71,15 @@ export default function Home() {
               <div className="name">
                 <div>Renault KWID</div>
                 <div>Rs 10 lakh</div>
-                </div>
-                <div className="offer_btn">
-                  <button>check for offers</button>
-                </div>
-             
+              </div>
+              <div className="offer_btn">
+                <button>check for offers</button>
+              </div>
+
             </div>
           </Col>
 
-          <Col md={3} sm={6}>
+          <Col md={3} xs={6}>
             <div className="main_container">
               <div className="search_img">
                 <img src={tractor_img_one} alt="alt for img" />
@@ -87,15 +87,47 @@ export default function Home() {
               <div className="name">
                 <div>Renault KWID</div>
                 <div>Rs 10 lakh</div>
-                </div>
-                <div className="offer_btn">
-                  <button>check for offers</button>
-                </div>
-             
+              </div>
+              <div className="offer_btn">
+                <button>check for offers</button>
+              </div>
+
             </div>
           </Col>
 
-          <Col md={3} sm={6}>
+          <Col md={3} xs={6}>
+            <div className="main_container">
+              <div className="search_img">
+                <img src={tractor_img_one} alt="alt for img one" />
+              </div>
+              <div className="name">
+                <div>Renault KWID</div>
+                <div>Rs 10 lakh</div>
+              </div>
+              <div className="offer_btn">
+                <button>check for offers</button>
+              </div>
+
+            </div>
+          </Col>
+
+          <Col md={3} xs={6}>
+            <div className="main_container">
+              <div className="search_img">
+                <img src={tractor_img_one} alt="alt for img one" />
+              </div>
+              <div className="name">
+                <div>Renault KWID</div>
+                <div>Rs 10 lakh</div>
+              </div>
+              <div className="offer_btn">
+                <button>check for offers</button>
+              </div>
+
+            </div>
+          </Col>
+
+          <Col md={3} xs={6}>
             <div className="main_container">
               <div className="search_img">
                 <img src={tractor_img_one} alt="alt for img" />
@@ -103,50 +135,18 @@ export default function Home() {
               <div className="name">
                 <div>Renault KWID</div>
                 <div>Rs 10 lakh</div>
-                </div>
-                <div className="offer_btn">
-                  <button>check for offers</button>
-                </div>
-             
-            </div>
-          </Col>
-
-          <Col md={3} sm={6}>
-            <div className="main_container">
-              <div className="search_img">
-                <img src={tractor_img_one} alt="alt for img" />
               </div>
-              <div className="name">
-                <div>Renault KWID</div>
-                <div>Rs 10 lakh</div>
-                </div>
-                <div className="offer_btn">
-                  <button>check for offers</button>
-                </div>
-             
-            </div>
-          </Col>
-
-          <Col md={3} sm={6}>
-            <div className="main_container">
-              <div className="search_img">
-                <img src={tractor_img_one} alt="alt for img" />
+              <div className="offer_btn">
+                <button>check for offers</button>
               </div>
-              <div className="name">
-                <div>Renault KWID</div>
-                <div>Rs 10 lakh</div>
-                </div>
-                <div className="offer_btn">
-                  <button>check for offers</button>
-                </div>
-             
+
             </div>
           </Col>
-          
-          
 
 
-          
+
+
+
 
         </Row>
       </Container>
