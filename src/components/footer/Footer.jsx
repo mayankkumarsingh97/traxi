@@ -22,7 +22,6 @@ export default function Footer() {
                                     </div>
                                     <div>
                                         <li className='heading'>Others</li>
-                                        <li><a href="#Careers">Careers at Toppers</a></li>
                                         <li><a href="#">Contact us</a></li>
                                         <li><a href="#">Blog</a></li>
                                     </div>

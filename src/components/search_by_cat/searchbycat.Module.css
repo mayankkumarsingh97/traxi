@@ -1,12 +1,16 @@
+
+
+
 .search_by_category ul li a {
     display: inline-block;
     padding: 4px 2px;
     color: #027F01;
     text-transform: uppercase;
     font-weight: 600;
-
-    
+    font-size: 14px;
 }
+
+
 
 .search_by_category ul li a:hover {
     background-color: yellow;

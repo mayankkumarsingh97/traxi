@@ -64,7 +64,7 @@ export default function Header() {
 
                 {/* Navigation menus */}
 
-                <Row className="mt-md-1">
+                <Row className="d-none d-md-block">
                     <Col md={9}>
                         <nav>
                             <ul>
@@ -119,7 +119,7 @@ export default function Header() {
                             </ul>
                         </nav>
                     </Col>
-                    <Col md={3}>
+                    {/* <Col md={3}>
                         <div className="d-flex justify-content-end set_locattion">
                             <li><select name="" id="">
                                 <option value="Faridabad">Faridabad</option>
@@ -128,7 +128,7 @@ export default function Header() {
                                 <option value="Faridabad">Faridabad</option>
                             </select></li>
                         </div>
-                    </Col>
+                    </Col> */}
                 </Row>
             </Container>
 

@@ -50,29 +50,31 @@ export default function SearchByCat() {
                         </div>
                     </Col>
                     <Col md={12}>
-                    <Carousel responsive={responsive}>
-                            <div className='d-flex justify-content-center row-direction-column'>
-                                <img src={carsoul_search_by_cat} className="im" alt="ooooo" />
-                                <div className="name">
-                                    Maruti
-                                </div>
-                                <div className="name">
-                                    Starting @12 lakh
-                                </div>
-                            </div>
-                            <div className='d-flex justify-content-center'><img src={carsoul_search_by_cat} className="im" alt="ooooo" /></div>
-                            <div className='d-flex justify-content-center'><img src={carsoul_search_by_cat} className="im" alt="ooooo" /></div>
-                            <div className='d-flex justify-content-center'><img src={carsoul_search_by_cat} className="im" alt="ooooo" /></div>
-                            <div className='d-flex justify-content-center'><img src={carsoul_search_by_cat} className="im" alt="ooooo" /></div>
-                            <div className='d-flex justify-content-center'><img src={carsoul_search_by_cat} className="im" alt="ooooo" /></div>
-                            <div className='d-flex justify-content-center'><img src={carsoul_search_by_cat} className="im" alt="ooooo" /></div>
-                            <div className='d-flex justify-content-center'><img src={carsoul_search_by_cat} className="im" alt="ooooo" /></div>
-                            <div className='d-flex justify-content-center'><img src={carsoul_search_by_cat} className="im" alt="ooooo" /></div>
-                        </Carousel>
+                        <Row>
+                            <Col>
+                                <Carousel responsive={responsive}>
+                                    <div className='d-flex justify-content-center row-direction-column'>
+                                        <img src={carsoul_search_by_cat} className="im" alt="ooooo" />
+                                    </div>
+
+                                    <div className='d-flex justify-content-center bg-dark'>
+                                        <img src={carsoul_search_by_cat} className="im" alt="ooooo" />
+                                    </div>
+
+                                    <div className='d-flex justify-content-center'><img src={carsoul_search_by_cat} className="im" alt="ooooo" /></div>
+                                    <div className='d-flex justify-content-center'><img src={carsoul_search_by_cat} className="im" alt="ooooo" /></div>
+                                    <div className='d-flex justify-content-center'><img src={carsoul_search_by_cat} className="im" alt="ooooo" /></div>
+                                    <div className='d-flex justify-content-center'><img src={carsoul_search_by_cat} className="im" alt="ooooo" /></div>
+                                    <div className='d-flex justify-content-center'><img src={carsoul_search_by_cat} className="im" alt="ooooo" /></div>
+                                    <div className='d-flex justify-content-center'><img src={carsoul_search_by_cat} className="im" alt="ooooo" /></div>
+                                    <div className='d-flex justify-content-center'><img src={carsoul_search_by_cat} className="im" alt="ooooo" /></div>
+                                </Carousel>
+                            </Col>
+                        </Row>
                     </Col>
 
 
-                   
+
                 </Row>
             </Container>
         </>

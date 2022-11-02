@@ -11,7 +11,7 @@ export default function Home() {
       <Container>
         <Row className="mt-md-2 py-md-3">
           <Col md={12}>
-            <h3 className='text-center'>The most searched  tractors.</h3>
+            <h3 className='text-center'>The most searched  Tractors.</h3>
           </Col>
           <Col md={3} xs={6}>
             <div className="main_container">
