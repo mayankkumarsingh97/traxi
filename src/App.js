@@ -17,11 +17,11 @@ function App() {
    <Header/>
    <Hero/>
    <Home/>
-   <SearchByCat/>
+   {/* <SearchByCat/> */}
    <LatestTractors/>
    <Footer/>
-   <Login/>
-   <Register/>
+   {/* <Login/> */}
+   {/* <Register/> */}
 
    
 

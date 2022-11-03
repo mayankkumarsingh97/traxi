@@ -1,28 +1,71 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import { useState, useEffect } from 'react'
 
+import axios from 'axios'
 import tractor_img_one from "../../img/tractor_img_one.png"
 
 import "./home.Module.css"
 export default function Home() {
+
+
+  const [products, setProducts] = useState([]);
+  // const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    // const api_key='GaZ5XdjC.5iLmnWyaxeHQgtSGR31V6LLWrUR5DM83'
+    // axios.get(`https://sfaapi.traxi.in/api/showroom/api/v1/product_list/'`).then((response) => {
+    //   setProducts(response.data);
+
+
+
+
+    const webApiUrl = 'https://sfaapi.traxi.in/showroom/api/v1/product_list'
+    const tokenStr = 'GaZ5XdjC.5iLmnWyaxeHQgtSGR31V6LLWrUR5DM83'
+    try {
+      axios.get(webApiUrl, { headers: { "X-Api-Key": `${tokenStr}`,
+      }}).then((response) => {
+        setProducts(response.data);
+      });
+    }
+    catch (e) {
+      console.log(e,'eiiiiiiiiiiiiiiiiiiiiiiiiiiiiiioooooooooo')
+    }
+    
+    // console.log(products, 'ooooooooooooooooooooooooooooooooo')
+
+
+    // setIsLoading(true)
+    // fetch(`https://sfaapi.traxi.in/api/showroom/api/v1/product_list&apiKey=${api_key}`)
+    //     .then(response => response.json())
+    //     .then((json) => {
+    //         setProducts(json)
+    // setIsLoading(false)
+    // })
+    // console.log(products)
+  }, []);
   return (
     <>
       <Container>
         <Row className="mt-md-2 py-md-3">
           <Col md={12}>
-            <h3 className='text-center'>The most searched  Tractors.</h3>
+            <h3 className='text-center'>Our Popular Machinery.</h3>
           </Col>
           <Col md={3} xs={6}>
             <div className="main_container">
               <div className="search_img">
-                <img src={tractor_img_one} alt="alt for img" />
+                <img src={tractor_img_one} alt="alt for img one" />
               </div>
               <div className="name">
-                <div>Renault KWID</div>
-                <div>Rs 10 lakh</div>
-              </div>
-              <div className="offer_btn">
+                <div>john deere 5310</div>
+                </div>
+                <div className="desc mt-1">
+                The John Deere model 4440 was the most popular tractor of the 
+                Iron Horses series. At the end of the first production year.
+                </div>
+              
+              <div className="offer_btn mt-2">
                 <button>check for offers</button>
               </div>
 
@@ -33,62 +76,17 @@ export default function Home() {
           <Col md={3} xs={6}>
             <div className="main_container">
               <div className="search_img">
-                <img src={tractor_img_one} alt="alt for img" />
+                <img src={tractor_img_one} alt="alt for img one" />
               </div>
               <div className="name">
-                <div>Renault KWID</div>
-                <div>Rs 10 lakh</div>
-              </div>
-              <div className="offer_btn">
-                <button>check for offers</button>
-              </div>
-
-            </div>
-          </Col>
-
-          <Col md={3} xs={6}>
-            <div className="main_container">
-              <div className="search_img">
-                <img src={tractor_img_one} alt="alt for img" />
-              </div>
-              <div className="name">
-                <div>Renault KWID</div>
-                <div>Rs 10 lakh</div>
-              </div>
-              <div className="offer_btn">
-                <button>check for offers</button>
-              </div>
-
-            </div>
-          </Col>
-
-
-          <Col md={3} xs={6}>
-            <div className="main_container">
-              <div className="search_img">
-                <img src={tractor_img_one} alt="alt for img" />
-              </div>
-              <div className="name">
-                <div>Renault KWID</div>
-                <div>Rs 10 lakh</div>
-              </div>
-              <div className="offer_btn">
-                <button>check for offers</button>
-              </div>
-
-            </div>
-          </Col>
-
-          <Col md={3} xs={6}>
-            <div className="main_container">
-              <div className="search_img">
-                <img src={tractor_img_one} alt="alt for img" />
-              </div>
-              <div className="name">
-                <div>Renault KWID</div>
-                <div>Rs 10 lakh</div>
-              </div>
-              <div className="offer_btn">
+                <div>john deere 5310</div>
+                </div>
+                <div className="desc mt-1">
+                The John Deere model 4440 was the most popular tractor of the 
+                Iron Horses series. At the end of the first production year.
+                </div>
+              
+              <div className="offer_btn mt-2">
                 <button>check for offers</button>
               </div>
 
@@ -101,10 +99,35 @@ export default function Home() {
                 <img src={tractor_img_one} alt="alt for img one" />
               </div>
               <div className="name">
-                <div>Renault KWID</div>
-                <div>Rs 10 lakh</div>
+                <div>john deere 5310</div>
+                </div>
+                <div className="desc mt-1">
+                The John Deere model 4440 was the most popular tractor of the 
+                Iron Horses series. At the end of the first production year.
+                </div>
+              
+              <div className="offer_btn mt-2">
+                <button>check for offers</button>
               </div>
-              <div className="offer_btn">
+
+            </div>
+          </Col>
+
+
+          <Col md={3} xs={6}>
+            <div className="main_container">
+              <div className="search_img">
+                <img src={tractor_img_one} alt="alt for img one" />
+              </div>
+              <div className="name">
+                <div>john deere 5310</div>
+                </div>
+                <div className="desc mt-1">
+                The John Deere model 4440 was the most popular tractor of the 
+                Iron Horses series. At the end of the first production year.
+                </div>
+              
+              <div className="offer_btn mt-2">
                 <button>check for offers</button>
               </div>
 
@@ -117,10 +140,35 @@ export default function Home() {
                 <img src={tractor_img_one} alt="alt for img one" />
               </div>
               <div className="name">
-                <div>Renault KWID</div>
-                <div>Rs 10 lakh</div>
+                <div>john deere 5310</div>
+                </div>
+                <div className="desc mt-1">
+                The John Deere model 4440 was the most popular tractor of the 
+                Iron Horses series. At the end of the first production year.
+                </div>
+              
+              <div className="offer_btn mt-2">
+                <button>check for offers</button>
               </div>
-              <div className="offer_btn">
+
+            </div>
+          </Col>
+
+
+          <Col md={3} xs={6}>
+            <div className="main_container">
+              <div className="search_img">
+                <img src={tractor_img_one} alt="alt for img one" />
+              </div>
+              <div className="name">
+                <div>john deere 5310</div>
+                </div>
+                <div className="desc mt-1">
+                The John Deere model 4440 was the most popular tractor of the 
+                Iron Horses series. At the end of the first production year.
+                </div>
+              
+              <div className="offer_btn mt-2">
                 <button>check for offers</button>
               </div>
 
@@ -130,13 +178,37 @@ export default function Home() {
           <Col md={3} xs={6}>
             <div className="main_container">
               <div className="search_img">
-                <img src={tractor_img_one} alt="alt for img" />
+                <img src={tractor_img_one} alt="alt for img one" />
               </div>
               <div className="name">
-                <div>Renault KWID</div>
-                <div>Rs 10 lakh</div>
+                <div>john deere 5310</div>
+                </div>
+                <div className="desc mt-1">
+                The John Deere model 4440 was the most popular tractor of the 
+                Iron Horses series. At the end of the first production year.
+                </div>
+              
+              <div className="offer_btn mt-2">
+                <button>check for offers</button>
               </div>
-              <div className="offer_btn">
+
+            </div>
+          </Col>
+
+          <Col md={3} xs={6}>
+            <div className="main_container">
+              <div className="search_img">
+                <img src={tractor_img_one} alt="alt for img one" />
+              </div>
+              <div className="name">
+                <div>john deere 5310</div>
+                </div>
+                <div className="desc mt-1">
+                The John Deere model 4440 was the most popular tractor of the 
+                Iron Horses series. At the end of the first production year.
+                </div>
+              
+              <div className="offer_btn mt-2">
                 <button>check for offers</button>
               </div>
 

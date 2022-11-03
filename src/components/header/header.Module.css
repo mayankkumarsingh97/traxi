@@ -17,9 +17,9 @@
 
 .search_se input {
     width: 90%;
-    box-shadow: inset 0 0 2px 3px rgb(185, 185, 185);
+    box-shadow: inset 0 0 8px 2px #FFCB08;
     outline: none;
-    border: 1px solid #eee;
+    border: none;
     border-radius: 5px;
     font-size: .8rem;
     padding: 6px 10px 6px 15px;
@@ -77,4 +77,10 @@ nav ul li a {
     text-transform: uppercase;
     color: rgba(0, 0, 0, .8);
     font-weight: 700;
+}
+
+@media (max-width:599px) {
+    .search_se input {
+        width: 100%;
+    }
 }

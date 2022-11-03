@@ -36,7 +36,7 @@ export default function LatestTractors() {
                     <Col md={12}>
 
                         <Col md={12}>
-                            <h3 className='py-md-1'>Latest Tractors....</h3>
+                            <h3 className='py-md-1 mt-3'>Latest machinery....</h3>
                         </Col>
 
                     </Col>

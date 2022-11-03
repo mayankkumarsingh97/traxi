@@ -6,7 +6,7 @@ import "./footer.Module.css"
 export default function Footer() {
     return (
         <>
-            <Container fluid className='footer_bg'>
+            <Container fluid className='footer_bg' style={{"background":"#FFCB08"}}>
                 <footer>
                     <Container>
                         <Row className='align-items-center justify-content-center'>
@@ -51,7 +51,7 @@ export default function Footer() {
                         <div className="border-bottom"></div>
                         <Row>
                             <Col md={12}>
-                                <div className="lead text-white my-2" style={{ fontSize: "10px" }}>
+                                <div className="text-dark my-2" style={{ fontSize: "14px" }}>
                                     traxi.in @ All rights Reserved.
                                 </div>
                             </Col>

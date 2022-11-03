@@ -15,38 +15,39 @@ import "./header.Module.css"
 export default function Header() {
     return (
         <>
-            <Container fluid className='bg-dark'>
+            <Container fluid className='p-1' style={{"background":"#FFCB08"}}>
                 <Row className='align-items-center'>
                     <Col md={9}>
-                        <div className="text-white lead" style={{ fontSize: "18px" }}>info@escortscropsolutions.com</div>
+                        <div className="text-dark" style={{ fontSize: "18px" }}>
+                            info@escortscropsolutions.com</div>
                     </Col>
                     <Col md={3}>
                         <div className="social_icons">
-                            <a href="#TwitterIcon"><TwitterIcon /></a>
-                            <a href="#FacebookIcon"><FacebookIcon /></a>
-                            <a href="#InstagramIcon"><InstagramIcon /></a>
-                            <a href="#LinkedInIcon"><LinkedInIcon /></a>
+                            <a href="#TwitterIcon" className='text-dark'><TwitterIcon /></a>
+                            <a href="#FacebookIcon" className='text-dark'><FacebookIcon /></a>
+                            <a href="#InstagramIcon" className='text-dark'><InstagramIcon /></a>
+                            <a href="#LinkedInIcon" className='text-dark'><LinkedInIcon /></a>
                         </div>
                     </Col>
                 </Row>
             </Container>
             <Container>
 
-                <Row className='justify-content-between align-items-center'>
+                <Row className='justify-content-between align-items-center mt-md-0'>
                     <Col md={4}>
-                        <div className="logo_header">
+                        <div className="logo_header d-none d-md-block">
                             <img src={logo} width="90" alt="" />
                         </div>
                     </Col>
 
-                    <Col md={5}>
+                    <Col md={5} className="mt-2">
                         <div className="search_se">
-                            <input type="search" placeholder='search here....' />
+                            <input type="search" placeholder='search your machinery here....' />
                         </div>
                     </Col>
 
                     <Col md={3}>
-                        <div className="d-flex justify-content-between register_login">
+                        <div className="d-flex justify-content-between register_login mt-md-0 mt-2">
                             <select name="" id="">
                                 <option value="English">English</option>
                                 <option value="Hindi">Hindi</option>
@@ -55,7 +56,7 @@ export default function Header() {
                             </select>
                             <FavoriteBorderIcon />
                             <div className='reg_login'>
-                                <a href="#login_register"><SupervisorAccountIcon /> Login/Register</a>
+                                <a href="#register"><SupervisorAccountIcon /> Login/Register</a>
                             </div>
 
                         </div>
@@ -64,19 +65,19 @@ export default function Header() {
 
                 {/* Navigation menus */}
 
-                <Row className="d-none d-md-block">
+                <Row className="d-none d-md-block mt-md-2">
                     <Col md={9}>
                         <nav>
                             <ul>
                                 <li>
-                                <a href="#home"><option value="Home">Home</option></a>
+                                    <a href="#home"><option value="Home">Home</option></a>
                                 </li>
                                 <li><select name="" id="">
-                                    <option value="Farm_services">Farm Services</option>
-                                    <option value="Farm_services">Farm Services</option>
-                                    <option value="Farm_services">Farm Services</option>
-                                    <option value="Farm_services">Farm Services</option>
-                                    <option value="Farm_services">Farm Services</option>
+                                    <option value="Farm_services">Product Division</option>
+                                    <option value="Farm_services">Agri Machinery</option>
+                                    <option value="Farm_services">Agri Chemicals</option>
+                                    <option value="Farm_services">Spare Parts</option>
+
 
                                 </select></li>
 
