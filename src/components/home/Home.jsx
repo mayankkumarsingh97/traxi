@@ -14,9 +14,7 @@ export default function Home() {
   // const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    // const api_key='GaZ5XdjC.5iLmnWyaxeHQgtSGR31V6LLWrUR5DM83'
-    // axios.get(`https://sfaapi.traxi.in/api/showroom/api/v1/product_list/'`).then((response) => {
-    //   setProducts(response.data);
+
 
 
 
