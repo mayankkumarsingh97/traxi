@@ -44,3 +44,10 @@
     background-color: #FF930D;
     color:#fff;
 }
+
+
+@media (max-width:599px) {
+    .main_container button{
+        font-size: 12px;
+    }
+}

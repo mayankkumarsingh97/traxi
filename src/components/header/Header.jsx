@@ -47,7 +47,7 @@ export default function Header() {
                     </Col>
 
                     <Col md={3}>
-                        <div className="d-flex justify-content-between register_login mt-md-0 mt-2">
+                        <div className="d-flex justify-content-between register_login mt-md-0 mt-md-2 mt-2 mb-1">
                             <select name="" id="">
                                 <option value="English">English</option>
                                 <option value="Hindi">Hindi</option>

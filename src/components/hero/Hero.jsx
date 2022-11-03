@@ -14,7 +14,6 @@ import "./hero.Module.css"
 export default function Hero() {
   return (
     <>
-
       <Container  className='hero_banner mt-md-3 shadow-lg p-md-4 p-1'>
         <Row>
           <Col md={12}>

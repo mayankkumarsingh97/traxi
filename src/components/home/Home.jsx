@@ -21,17 +21,8 @@ export default function Home() {
 
 
 
-    const webApiUrl = 'https://sfaapi.traxi.in/showroom/api/v1/product_list'
-    const tokenStr = 'GaZ5XdjC.5iLmnWyaxeHQgtSGR31V6LLWrUR5DM83'
-    try {
-      axios.get(webApiUrl, { headers: { "X-Api-Key": `${tokenStr}`,
-      }}).then((response) => {
-        setProducts(response.data);
-      });
-    }
-    catch (e) {
-      console.log(e,'eiiiiiiiiiiiiiiiiiiiiiiiiiiiiiioooooooooo')
-    }
+
+   
     
     // console.log(products, 'ooooooooooooooooooooooooooooooooo')
 
