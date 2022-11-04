@@ -1,11 +1,17 @@
 .social_icons {
-    height: 40px;
+    /* height: 40px; */
     color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 5px 0;
+    padding: 4px 0;
+    
 }
+.social_icons .mobileView{
+    /* width: 100px; */
+    height: 40px;
+}
+
 
 .social_icons a {
     color: #fff;
@@ -46,8 +52,9 @@ nav ul li select {
 }
 
 .register_login .reg_login a {
-    font-size: .7rem;
-    color: #000;
+    font-size: .6rem;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
 }
 
 
@@ -79,8 +86,39 @@ nav ul li a {
     font-weight: 700;
 }
 
+.social_bar_background{
+    background-color: #FFCB08;
+  }
+
 @media (max-width:599px) {
+    /* .search_se{
+       position:fixed;
+        top:0;
+
+    } */
+    .search_se{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
     .search_se input {
         width: 100%;
+        box-shadow: none;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        font-weight: 200;
+        font-size: 16px;
+    }
+    .social_bar_background{
+        padding:8px 3px;
+      background-color: #51DC99;
+    }
+    .social_icons{
+        width: 100%;
+    }
+    .social_icons .icons a:first-child{
+        /* font-size: 14px; */
+        color:blue;
     }
 }

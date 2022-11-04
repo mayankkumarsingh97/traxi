@@ -9,24 +9,33 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
+import SearchIcon from '@mui/icons-material/Search';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import MenuIcon from '@mui/icons-material/Menu';
+
 import logo from "../../img/traxi-logo.png"
+import logo_mobile from "../../img/traxi_logo_mobile.png"
 import "./header.Module.css"
 
 export default function Header() {
     return (
         <>
-            <Container fluid className='p-1' style={{"background":"#FFCB08"}}>
+            <Container fluid className='social_bar_background'>
                 <Row className='align-items-center'>
                     <Col md={9}>
-                        <div className="text-dark" style={{ fontSize: "18px" }}>
+                        <div className="text-dark d-none d-md-none" style={{ fontSize: "18px"}}>
                             info@escortscropsolutions.com</div>
                     </Col>
                     <Col md={3}>
                         <div className="social_icons">
-                            <a href="#TwitterIcon" className='text-dark'><TwitterIcon /></a>
-                            <a href="#FacebookIcon" className='text-dark'><FacebookIcon /></a>
-                            <a href="#InstagramIcon" className='text-dark'><InstagramIcon /></a>
-                            <a href="#LinkedInIcon" className='text-dark'><LinkedInIcon /></a>
+                        <MenuIcon/>
+                            <div className='d-flex icons align-items-center'>
+                                <a href="#TwitterIcon" className='' style={{"color":"darkblue","fontSize":"8px"}}><TwitterIcon /></a>
+                                <a href="#FacebookIcon" className='' style={{"color":"blue"}}><FacebookIcon /></a>
+                                <a href="#InstagramIcon" className='' style={{"color":"#8a3ab9"}}><InstagramIcon /></a>
+                                <a href="#LinkedInIcon" className='' style={{"color":"blue"}}><LinkedInIcon /></a>
+                            </div>
+                         
                         </div>
                     </Col>
                 </Row>
@@ -35,26 +44,27 @@ export default function Header() {
 
                 <Row className='justify-content-between align-items-center mt-md-0'>
                     <Col md={4}>
+                        {/* Desktop View Icons */}
                         <div className="logo_header d-none d-md-block">
-                            <img src={logo} width="90" alt="" />
+                            <img src={logo_mobile}  alt="" />
                         </div>
                     </Col>
 
                     <Col md={5} className="mt-2">
                         <div className="search_se">
-                            <input type="search" placeholder='search your machinery here....' />
+                             <input type="search" placeholder='Search your machinery here....' /> <SearchIcon />
                         </div>
                     </Col>
 
                     <Col md={3}>
                         <div className="d-flex justify-content-between register_login mt-md-0 mt-md-2 mt-2 mb-1">
                             <select name="" id="">
-                                <option value="English">English</option>
-                                <option value="Hindi">Hindi</option>
-                                <option value="English">English</option>
-                                <option value="Hindi">Hindi</option>
+                                <option value="English" >Location</option>
+                                <option value="Hindi">Haryana</option>
+                                <option value="English">MP</option>
+                                <option value="Hindi">Uttar Pardesh</option>
                             </select>
-                            <FavoriteBorderIcon />
+                            {/* <FavoriteBorderIcon /> */}
                             <div className='reg_login'>
                                 <a href="#register"><SupervisorAccountIcon /> Login/Register</a>
                             </div>
