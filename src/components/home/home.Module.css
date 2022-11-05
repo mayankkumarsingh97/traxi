@@ -1,4 +1,3 @@
-
 .main_container{
     margin-top: 20px;
     padding:10px;
@@ -71,5 +70,12 @@
         object-fit: cover;
 
     
+    }
+    .our_popular_machine{
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-bottom: 0;
+        text-decoration: underline;
     }
 }

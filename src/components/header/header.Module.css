@@ -100,7 +100,6 @@ nav ul li a {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
     }
     .search_se input {
         width: 100%;
@@ -111,11 +110,13 @@ nav ul li a {
         font-size: 16px;
     }
     .social_bar_background{
-        padding:8px 3px;
+        /* padding:8px 0; */
+        padding-top: 5px;
+        padding-bottom: 5px;
       background-color: #51DC99;
     }
     .social_icons{
-        width: 100%;
+        /* width: 100%; */
     }
     .social_icons .icons a:first-child{
         /* font-size: 14px; */

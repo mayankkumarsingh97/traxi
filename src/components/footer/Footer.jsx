@@ -2,14 +2,16 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+
+import ecs_log from "../../img/esc_logo_footer.png"
 import "./footer.Module.css"
 export default function Footer() {
     return (
         <>
-            <Container fluid className='footer_bg' style={{"background":"#FFCB08"}}>
+            <Container fluid className='footer_bg' style={{ "background": "#FFCB08" }}>
                 <footer>
                     <Container>
-                        <Row className='align-items-center justify-content-center'>
+                        <Row className='justify-content-center'>
                             <Col md={4}>
                                 <ul className='d-flex justify-content-md-around'>
                                     <div>
@@ -36,15 +38,28 @@ export default function Footer() {
                                         <li><a href="#Shipping">Shipping</a></li>
                                         <li><a href="#">FAQ'S & Help</a></li>
                                         <li><a href="#">Tems and Conditions</a></li>
-                                        <li><a href="#">Tems and Conditions</a></li>
+                                        
                                     </div>
                                     <div>
                                         <li className='heading'>&nbsp;Exclusive Services</li>
-                                        <li><a href="#">Call us 8899889988</a></li>
+                                        <li><a href="#">Call us 1800 572 6095</a></li>
                                         <li><a href="#">Send us email</a></li>
                                         <li><a href="#">See our store</a></li>
 
                                     </div>
+                                </ul>
+                            </Col>
+
+
+                            <Col md={4}>
+                                <ul className='d-flex justify-content-md-around'>
+                                    <div>
+                                        <li className='heading'><a href="#"><img src={ecs_log} alt="" /></a></li>
+                                        <li><a href="#">2nd Floor, Plot No. 4, Near Metro Pillar 599, 15/1 Mathura Road, NH-2 FARIDABAD, HARYANA 121003</a></li>
+                                        <li><a href="#">Call us 1800 572 6095</a></li>
+                                        <li><a href="#">info@escortscropsolutions.com</a></li>
+                                    </div>
+                                  
                                 </ul>
                             </Col>
                         </Row>

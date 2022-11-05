@@ -83,7 +83,7 @@ export default function Hero() {
 
         <Row className="mt-2 p-1">
           <Col xs={6} className="px-1 my-1">
-            <div className="shadow">
+            <div className="">
               <div className="mobile_view_img" style={{ height: "150px", 'borderRadius': "10px", background: "#985DED" }}>
                 <small className='mx-auto'>NEW</small>
                 <div className="desc">with exciting offers. &nbsp;<span style={{fontSize:"8px"}}><ArrowRightAltIcon/></span></div>
@@ -93,7 +93,7 @@ export default function Hero() {
           </Col>
 
           <Col xs={6} className="px-1 my-1">
-            <div className="shadow">
+            <div className="">
 
               <div className="mobile_view_img" style={{ height: "150px", 'borderRadius': "10px", background: "#F65D34" }}>
                 <small className='text-center'>USED</small>
@@ -104,7 +104,7 @@ export default function Hero() {
           </Col>
 
           <Col xs={6} className="px-1 my-1">
-            <div className="shadow">
+            <div className="">
 
               <div className="mobile_view_img" style={{ height: "150px", 'borderRadius': "10px", background: "#5CA7FA" }}>
                 <small className='text-center'>SELL</small>
@@ -116,7 +116,7 @@ export default function Hero() {
 
           <Col xs={6} className="px-1 my-1">
 
-            <div className="shadow">
+            <div className="">
 
               <div className="mobile_view_img" style={{ height: "150px", 'borderRadius': "10px", background: "#51DC99" }}>
                 <small className='text-center'>COMPARE</small>

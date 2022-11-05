@@ -6,6 +6,8 @@ import { useState, useEffect } from 'react'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+
 import axios from 'axios'
 import tractor_img_one from "../../img/tractor_img_one.png"
 import product1 from "../../img/product/product1.png"
@@ -16,7 +18,7 @@ import product5 from "../../img/product/product5.png"
 import product6 from "../../img/product/product6.png"
 import product7 from "../../img/product/product7.png"
 import product8 from "../../img/product/product8.png"
-import product9 from "../../img/product/product9.png"
+import product9 from "../../img/product/product9.jpg"
 import "./home.Module.css"
 
 import Form from 'react-bootstrap/Form';
@@ -33,17 +35,7 @@ export default function Home() {
   // const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-
-
-
-
-
-
-
-
     // console.log(products, 'ooooooooooooooooooooooooooooooooo')
-
-
     // setIsLoading(true)
     // fetch(`https://sfaapi.traxi.in/api/showroom/api/v1/product_list&apiKey=${api_key}`)
     //     .then(response => response.json())
@@ -62,7 +54,7 @@ export default function Home() {
         </Modal.Header>
         <Modal.Body >
           <Form>
-          <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
               <Form.Control type="text" placeholder="name" />
             </Form.Group>
             <Form.Group className="mb-1" controlId="exampleForm.ControlInput2">
@@ -100,11 +92,12 @@ export default function Home() {
             Save Changes
           </Button>
         </Modal.Footer> */}
+
       </Modal>
       <Container>
         <Row className="">
           <Col md={12}>
-            <h3 className='text-center our_popular_machine mt-md-0 mt-4'>Our Popular Machinery.</h3>
+            <h3 className='our_popular_machine mt-md-4 mt-3'>Our Popular Machinery <ArrowDownwardIcon className="d-none d-md-inline" /></h3>
           </Col>
           <Col md={3} xs={6}>
             <div className="main_container">
