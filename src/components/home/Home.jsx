@@ -2,48 +2,35 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { useState, useEffect } from 'react'
-
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-
 import axios from 'axios'
-import tractor_img_one from "../../img/tractor_img_one.png"
-import product1 from "../../img/product/product1.png"
-import product2 from "../../img/product/product2.png"
-import product3 from "../../img/product/product3.png"
-import product4 from "../../img/product/product4.png"
-import product5 from "../../img/product/product5.png"
-import product6 from "../../img/product/product6.png"
-import product7 from "../../img/product/product7.png"
-import product8 from "../../img/product/product8.png"
-import product9 from "../../img/product/product9.jpg"
+import Spinner from '../molicules/spinner/Spinner';
 import "./home.Module.css"
-
 import Form from 'react-bootstrap/Form';
-
 import Register from '../login_register/Register'
+
+import img_one from "../../img/product/product4.png"
+
 export default function Home() {
 
   const [openModel, setModel] = useState(true)
-  const [products, setProducts] = useState([]);
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  // const [isLoading, setIsLoading] = useState(false);
+  const [products, setProducts] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    // console.log(products, 'ooooooooooooooooooooooooooooooooo')
-    // setIsLoading(true)
-    // fetch(`https://sfaapi.traxi.in/api/showroom/api/v1/product_list&apiKey=${api_key}`)
-    //     .then(response => response.json())
-    //     .then((json) => {
-    //         setProducts(json)
-    // setIsLoading(false)
-    // })
-    // console.log(products)
+    let webApiUrl = `${process.env.REACT_APP_HOST}/showroom/api/v1/product_list`;
+    let tokenStr = `${process.env.REACT_APP_API_KEY}`;
+    axios.get(webApiUrl, { headers: { "X-Api-key": `${tokenStr}` } }).then((res) => {
+      setProducts(res.data.data)
+    }).catch((e) => {
+      console.log(e)
+    })
+    console.log(products, "hlllllllllllllllllllllllllllllllll")
   }, []);
   return (
     <>
@@ -99,146 +86,120 @@ export default function Home() {
           <Col md={12}>
             <h3 className='our_popular_machine mt-md-4 mt-3'>Our Popular Machinery <ArrowDownwardIcon className="d-none d-md-inline" /></h3>
           </Col>
+          {/* {
+            products.map((item, key) => {
+              return <>
+                <Col md={3} xs={6} key={key}>
+                  <div className="main_container">
+                    <div className="search_img shadow">
+                      <img src={item.image_url} alt="alt for img one" />
+                    </div>
+                    <div className="name">
+                      <div>{item.product_name}</div>
+                    </div>
+                    <div className="offer_btn mt-2">
+                      <button className='enquireButton' onClick={handleShow}>Enquire Now</button>
+                    </div>
+                  </div>
+                </Col>
+              </>
+            })
+          } */}
+
+
+
+
+          {/* static data showcase purpose */}
+
+
+
           <Col md={3} xs={6}>
             <div className="main_container">
-              <div className="search_img">
-                <img src={product9} alt="alt for img one" />
+              <div className="search_img shadow">
+                <img src={img_one} alt="alt for img one" />
               </div>
               <div className="name">
-                <div>john deere 5310</div>
+                <div>Jhon dheer 8899</div>
               </div>
-
-
               <div className="offer_btn mt-2">
                 <button className='enquireButton' onClick={handleShow}>Enquire Now</button>
-
-
               </div>
-
-            </div>
-
-          </Col>
-
-
-          {/* Duplicates starts from here.. */}
-          <Col md={3} xs={6}>
-            <div className="main_container">
-              <div className="search_img">
-                <img src={product2} alt="alt for img one" />
-              </div>
-              <div className="name">
-                <div>john deere 5310</div>
-              </div>
-
-
-              <div className="offer_btn mt-2">
-                <button onClick={handleShow}>Enquire Now</button>
-              </div>
-
-            </div>
-          </Col>
-
-          <Col md={3} xs={6}>
-            <div className="main_container">
-              <div className="search_img">
-                <img src={product3} alt="alt for img one" />
-              </div>
-              <div className="name">
-                <div>john deere 5310</div>
-              </div>
-
-
-              <div className="offer_btn mt-2">
-                <button onClick={handleShow}>Enquire Now</button>
-              </div>
-
             </div>
           </Col>
 
 
           <Col md={3} xs={6}>
             <div className="main_container">
-              <div className="search_img">
-                <img src={product4} alt="alt for img one" />
+              <div className="search_img shadow">
+                <img src={img_one} alt="alt for img one" />
               </div>
               <div className="name">
-                <div>john deere 5310</div>
+                <div>Jhon dheer 8899</div>
               </div>
-
-
               <div className="offer_btn mt-2">
-                <button onClick={handleShow}>Enquire Now</button>
+                <button className='enquireButton' onClick={handleShow}>Enquire Now</button>
               </div>
+            </div>
+          </Col>
 
+
+
+
+          <Col md={3} xs={6}>
+            <div className="main_container">
+              <div className="search_img shadow">
+                <img src={img_one} alt="alt for img one" />
+              </div>
+              <div className="name">
+                <div>Jhon dheer 8899</div>
+              </div>
+              <div className="offer_btn mt-2">
+                <button className='enquireButton' onClick={handleShow}>Enquire Now</button>
+              </div>
             </div>
           </Col>
 
           <Col md={3} xs={6}>
             <div className="main_container">
-              <div className="search_img">
-                <img src={product5} alt="alt for img one" />
+              <div className="search_img shadow">
+                <img src={img_one} alt="alt for img one" />
               </div>
               <div className="name">
-                <div>john deere 5310</div>
+                <div>Jhon dheer 8899</div>
               </div>
-
-
               <div className="offer_btn mt-2">
-                <button onClick={handleShow}>Enquire Now</button>
+                <button className='enquireButton' onClick={handleShow}>Enquire Now</button>
               </div>
-
             </div>
           </Col>
 
 
           <Col md={3} xs={6}>
             <div className="main_container">
-              <div className="search_img">
-                <img src={product6} alt="alt for img one" />
+              <div className="search_img shadow">
+                <img src={img_one} alt="alt for img one" />
               </div>
               <div className="name">
-                <div>john deere 5310</div>
+                <div>Jhon dheer 8899</div>
               </div>
-
-
               <div className="offer_btn mt-2">
-                <button onClick={handleShow}>Enquire Now</button>
+                <button className='enquireButton' onClick={handleShow}>Enquire Now</button>
               </div>
-
             </div>
           </Col>
 
-          <Col md={3} xs={6}>
-            <div className="main_container">
-              <div className="search_img">
-                <img src={product6} alt="alt for img one" />
-              </div>
-              <div className="name">
-                <div>john deere 5310</div>
-              </div>
-
-
-              <div className="offer_btn mt-2">
-                <button onClick={handleShow}>Enquire Now</button>
-              </div>
-
-            </div>
-          </Col>
 
           <Col md={3} xs={6}>
             <div className="main_container">
-              <div className="search_img">
-                <img src={product7} alt="alt for img one" />
+              <div className="search_img shadow">
+                <img src={img_one} alt="alt for img one" />
               </div>
               <div className="name">
-                <div>john deere 5310</div>
+                <div>Jhon dheer 8899</div>
               </div>
-
-
               <div className="offer_btn mt-2">
-                <button onClick={handleShow}>Enquire Now</button>
+                <button className='enquireButton' onClick={handleShow}>Enquire Now</button>
               </div>
-
             </div>
           </Col>
 
@@ -249,7 +210,6 @@ export default function Home() {
 
         </Row>
       </Container>
-
     </>
   )
 }

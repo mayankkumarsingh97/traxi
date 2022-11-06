@@ -10,6 +10,8 @@ import Footer from './components/footer/Footer';
 import Login from "./components/login_register/Login";
 import Register from './components/login_register/Register';
 
+import ProductList from './components/product_list/ProductList';
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
    <Footer/>
    {/* <Login/> */}
    {/* <Register/> */}
+   {/* <ProductList/> */}
  </>
   );
 }
