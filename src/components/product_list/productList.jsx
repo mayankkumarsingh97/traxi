@@ -7,7 +7,7 @@ function ProductList() {
   // const [loading, setLoading] = useState(false)
   useEffect(() => {
     let webApiUrl = 'https://sfaapi.traxi.in/showroom/api/v1/product_list';
-    let tokenStr = 'GaZ5XdjC.5iLmnWyaxeHQgtSGR31V6LLWrUR5DM83';
+    let tokenStr = '';
     axios.get(webApiUrl, { headers: {"X-Api-key" : `${tokenStr}`}}).then((res)=>{
       setProducts(res.data.data)
     }).catch((e)=>{
