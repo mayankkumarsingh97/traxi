@@ -1,0 +1,130 @@
+.bgmobile {
+    background-color:#FFCB08;
+    color: #fff;
+}
+
+.toFixMobilebar {
+    position: fixed;
+    background-color:#FFCB08;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: #000;
+    z-index: 100;
+    transition: all 1s linear;
+    
+}
+
+.toDesktopbar {
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:7.5rem;
+    border-radius: 30px;
+    justify-content: center;
+    color: #000 !important;
+    background-color: var(--purple-bg);
+    z-index: 999;
+    margin-top:6px;
+    padding: 10px 15px 10px 10px;
+}
+#stopScroll li b a{
+    /* font-size: 1rem!important; */
+    color:#000;
+    text-transform: uppercase;
+    margin:15px 0;
+    font-weight: 500!important;
+}
+
+
+.logo p {
+    color: var(--white);
+    /* padding:.45rem 0 0  0; */
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li:not(:first-child) {
+    margin: 0 1.2rem;
+}
+
+.menu li a,
+select {
+    font-size: .9rem;
+    font-weight: 600;
+    color: blue;
+}
+
+.header_se_sign li a {
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 600;
+    color: blue;
+}
+
+.menu li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.navbg {
+    background-color: blue;
+}
+
+.navbg_option {
+    border: none;
+    outline: none;
+    background-color: blue;
+}
+
+/* Mobile slide menu */
+/* Mobile slide menu */
+.sidebar {
+    z-index: 6;
+    background-color: #FFCB08;
+}
+
+.mobile-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    max-width: 100%;
+    padding-top:.25rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: all .45s ease-in;
+    z-index: 300;
+    color: black;
+    max-height: 100vh;
+}
+
+/* mobile sidebar when active */
+/* mobile sidebar when active */
+.mobile-navbar.active {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 2000;
+    /* height: 100%; */
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform .35s ease-in-out;
+    background-color: #FFCB08;
+    overflow: hidden;
+    /* width: 100%; */
+}
+
+.cd-none{
+    display: none;
+}
+.mobile-navbar.deactive {
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: .30s ease-out;
+}

@@ -1,0 +1,13 @@
+ .form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    outline: 0;
+    border: 1px solid #FF930D;
+    /* box-shadow: 0 0 0 0.25rem #FF930D!important; */
+    box-shadow:none;
+}
+
+
+.login_bg{
+    background-color: #FF930D;
+} 
